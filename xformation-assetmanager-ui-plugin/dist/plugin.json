@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "app",
+  "name": "Asset manager",
+  "id": "xformation-assetmanager-ui-plugin",
+  "info": {
+    "description": "Asset manager",
+    "author": {
+      "name": "Synectiks"
+    },
+    "logos": {
+      "small": "img/asset_logo.svg",
+      "large": "img/asset_logo.svg"
+    },
+    "screenshots": [],
+    "version": "1.0.0",
+    "updated": "2022-10-06"
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "Environments",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin"
+    },
+    {
+      "type": "page",
+      "name": "AmazonServices",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin?path=amazon-services"
+    },
+    {
+      "type": "page",
+      "name": "Kubernetes",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin?path=kubernetes"
+    },
+    {
+      "type": "page",
+      "name": "StorageDetails",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin?path=storage-details"
+    },
+    {
+      "type": "page",
+      "name": "AccountSetup",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin?path=account-setup"
+    },
+    {
+      "type": "page",
+      "name": "DepartmentWiseProducts",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin?path=department-wise-products"
+    },
+    {
+      "type": "page",
+      "name": "DepartmentWiseCharts",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin?path=department-wise-charts"
+    },
+    {
+      "type": "page",
+      "name": "StorageViewDetails",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin?path=view-storage-details"
+    },
+    {
+      "type": "page",
+      "name": "ProductWiseServicesSla",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin?path=product-wise-services-sla"
+    }
+  ],
+  "dependencies": {
+    "grafanaDependency": ">=8.0.0",
+    "plugins": []
+  }
+}

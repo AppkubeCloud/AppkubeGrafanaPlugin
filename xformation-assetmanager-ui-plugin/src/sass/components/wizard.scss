@@ -1,0 +1,129 @@
+/*************************** Wizard ********************/
+
+.wizard-container {
+    margin-right: 20px;
+}
+  
+.wizard-step-line-container {
+  padding: 5px;
+  background-color: #f8f9fb;
+
+  .wizard-step-button {
+    display: inline-block;
+    width: 20%;
+    border-top: 1px solid #707070b5;
+    border-bottom: 1px solid #707070b5;
+    background-color: #dde4e9;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 0;
+    text-align: center;
+    color: #414d55;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+    &:last-child {
+      border-right: 1px solid #707070b5;
+    }
+
+    &:first-child {
+      border-left: 1px solid #707070b5;
+    }
+
+    &:hover {
+      background-color: #efefef;
+      color: #2662f0;
+    }
+
+    &.active {
+      background-color: #ffffff;
+      color: #2662f0;
+    }
+
+    &:after {
+      position: absolute;
+      top: 1px;
+      right: -27px;
+      content: "";
+      border: solid transparent;
+      border-color: rgba(221, 228, 233, 0);
+      border-left-color: #dde4e9;
+      border-width: 14px;
+      margin-top: 0px;
+      width: 0;
+      height: 0;
+      z-index: 1;
+    }
+
+    &:before {
+      position: absolute;
+      top: 1px;
+      right: -28px;
+      content: "";
+      border: solid transparent;
+      border-color: rgba(159, 163, 165, 0);
+      border-left-color: #9fa3a5;
+      border-width: 14px;
+      margin-top: 0px;
+      width: 0;
+      height: 0;
+      z-index: 1;
+    }
+
+    &:hover:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-left-color: #efefef;
+    }
+
+    &.active:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-left-color: #ffffff;
+    }
+
+    &:hover:before {
+      border-color: rgba(255, 255, 255, 0);
+      border-left-color: #efefef;
+    }
+
+    &.active:before {
+      border-color: rgba(255, 255, 255, 0);
+      border-left-color: #ffffff;
+    }
+
+    &:last-child {
+      &:after, &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.wizard-step-component {
+  padding: 20px 0px;
+  display: block;
+
+  &.d-none {
+    display: none;
+  }
+}
+
+@media (max-width: 767px){
+  .wizard-step-line-container {
+    .wizard-step-button{
+      width: 100%;
+      border-right: 1px solid #707070b5;
+      border-left: 1px solid #707070b5;
+      border-bottom: none;
+      &:last-child{
+        border-bottom: 1px solid #707070b5;
+      }
+      &::before{
+        display: none;
+      }
+      &::after{
+        display: none;
+      }
+    }
+  }
+}

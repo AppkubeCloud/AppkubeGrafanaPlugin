@@ -1,0 +1,1111 @@
+.department-wise-container {
+    background-color: $department-background-color;
+    padding: 15px;
+
+    .wise-icon {
+        display: inline-block;
+        width: 20px;
+        margin-right: 10px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .common-container {
+        background-color: $asset-container-background-color;
+        box-shadow: 0px 2px 4px $asset-container-border-color;
+        border-radius: 10px;
+        padding: 20px;
+        border-bottom: none;
+        margin-bottom: 15px;
+
+    }
+
+    .department-heading {
+        border-bottom: 1px solid #f5f6f5;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .cost-analysis-chart {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        min-height: calc(100% - 30px);
+        background: #FFFFFF;
+        box-shadow: 4px 4px 4px #0000000A;
+
+        .heading {
+            display: block;
+            color: #202020;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+        }
+
+        .edit {
+            float: right;
+
+            a {
+                color: #202020;
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 500;
+            }
+
+        }
+
+        .total-cost-text {
+            display: block;
+            width: 100%;
+            color: #202020;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 600;
+            padding-top: 20px;
+            text-align: right;
+
+            &.cost {
+                text-align: center;
+                font-size: 12px;
+                font-weight: 500;
+
+                strong {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .chart {
+            display: block;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            min-height: calc(100% - 42px);
+
+            .chart-spinner {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .view-details-link {
+            display: block;
+            width: 100%;
+            text-align: right;
+
+            a {
+                display: inline-block;
+                color: #202020;
+                font-size: 11px;
+                line-height: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .department-wise-boxs {
+        display: flex;
+        padding: 20px 15px;
+        background-color: #F9FAFF;
+        border-radius: 10px;
+        margin-top: 10px;
+        white-space: nowrap;
+
+        .department-wise-inner {
+            overflow: hidden;
+            overflow-x: scroll;
+            display: flex;
+            width: 100%;
+        }
+
+        .department-box {
+            display: flex;
+            flex: 0 0 300px;
+            flex-wrap: wrap;
+            width: 300px;
+            min-height: 150px;
+            margin-right: 20px;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 6px #3B7CFF29;
+            border: 0.5px solid #3B7CFF;
+            border-radius: 10px;
+
+            .heading {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 600;
+                color: #000000;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                border-bottom: 0.5px solid #3B7CFF;
+                box-shadow: 0px 1px 6px #3B7CFF29;
+            }
+
+            .contents {
+                display: block;
+                width: 100%;
+                padding-bottom: 15px;
+
+                ul {
+                    display: block;
+                    width: 100%;
+                    padding: 20px 15px 0px;
+                    margin: 0;
+                    list-style: none;
+
+                    li {
+                        display: block;
+                        width: 100%;
+                        padding-bottom: 10px;
+                        font-size: 13px;
+                        line-height: 18px;
+                        color: #000;
+                        font-weight: 500;
+
+                        label {
+                            display: inline-block;
+                            width: 80%;
+                        }
+
+                        span {
+                            display: inline-block;
+                            width: 20%;
+                            text-align: right;
+                        }
+                    }
+                }
+
+                .production-heading {
+                    display: block;
+                    width: 100%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    text-align: left;
+                    font-size: 17px;
+                    margin-top: 10px;
+
+                    label {
+                        line-height: 17px;
+                        color: #202020;
+                        font-weight: 600;
+                    }
+
+                    span {
+                        line-height: 17px;
+                        color: #202020;
+                        font-weight: 600;
+                    }
+                }
+
+                .production-chart {
+                    display: table;
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 15px;
+                }
+
+                .production-billing-text {
+                    display: block;
+                    width: 100%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 5px;
+
+                    label {
+                        font-size: 13px;
+                        line-height: 18px;
+                        color: #202020;
+                        font-weight: 400;
+                    }
+
+                    span {
+                        font-size: 13px;
+                        line-height: 18px;
+                        color: #202020;
+                        font-weight: 400;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .department-fliters-container {
+        display: block;
+
+        .fliter-container {
+            padding-top: 5px;
+            //padding-bottom: 5px;
+            border-bottom: 1px solid #F0F3F7;
+
+            .services-view {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: flex-start;
+
+                strong {
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 32px;
+                    margin-right: 10px;
+                    font-weight: 600;
+                    color: #414D55;
+                }
+
+                img {
+                    max-width: 20px;
+                    height: auto;
+                }
+            }
+
+            .showing-results {
+                display: block;
+                width: 100%;
+                text-align: right;
+                font-size: 13px;
+                line-height: 32px;
+                font-weight: 400;
+                font-style: italic;
+                color: #39475B;
+            }
+
+            .fliter {
+                position: relative;
+                margin-bottom: 5px;
+
+                .fliter-toggel {
+                    background: #F0F3F7;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    font-weight: 300;
+                    color: #414D55;
+                    line-height: 32px;
+                    padding: 0 10px;
+                    cursor: pointer;
+
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        margin-top: -2px;
+                    }
+
+                    span {
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                }
+
+                .fliter-collapse {
+                    background-color: #FFFFFF;
+                    border: 1px solid #F0F3F7;
+                    border-radius: 0px 0px 4px 4px;
+                    padding: 10px 10px 0;
+                    display: none;
+                    position: absolute;
+                    top: 32px;
+                    width: 100%;
+                    left: 0;
+                    z-index: 10;
+
+                    &.active {
+                        display: block;
+                    }
+
+                    ul {
+                        display: block;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            display: block;
+                            padding-bottom: 5px;
+
+                            a {
+                                color: #414D55;
+                                display: block;
+
+                                &:hover {
+                                    color: #3B7CFF;
+                                }
+
+                                p {
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    margin-bottom: 0;
+                                    margin-top: 3px;
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    font-weight: 500;
+
+                                }
+
+                                span {
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    text-align: center;
+                                    width: 24px;
+                                    height: 24px;
+                                    line-height: 24px;
+                                    margin-right: 5px;
+
+                                    img {
+                                        max-width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .fliters-collapse-bg {
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+
+            .search-control {
+                position: relative;
+                margin-bottom: 5px;
+
+                .input-group-text {
+                    max-width: 100%;
+                    text-align: left;
+                    padding-right: 15px;
+                    padding-left: 30px;
+                    width: 100%;
+                    border: 1px solid #ced4da;
+                    background-color: #ffffff;
+                    border-radius: 4px;
+                    color: #8998AC;
+                }
+
+                button {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                    cursor: pointer;
+                    border: none;
+                    background-color: transparent;
+                    width: 32px;
+                    height: 32px;
+                    color: #8998AC;
+                }
+            }
+
+        }
+
+        .data-table {
+            display: block;
+            width: 100%;
+
+            .thead {
+                display: block;
+                width: 100%;
+                background-color: #D9E4F2;
+                border-radius: 10px 10px 0px 0px;
+
+                .name {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px 10px 30px;
+                    width: 20%;
+                    color: #24292e;
+                }
+
+                .cloud-environment {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    text-align: center;
+                    width: 20%;
+                    color: #24292e;
+                }
+
+                .app-services {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    text-align: center;
+                    width: 15%;
+                    color: #24292e;
+                }
+
+                .data-services {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    text-align: center;
+                    width: 15%;
+                    color: #24292e;
+                }
+
+                .product-environment {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    width: 24%;
+                    color: #24292e;
+                }
+
+                .edit {
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    width: 6%;
+                    text-align: right;
+                    float: right;
+                    position: relative;
+
+                    .edit-btn {
+                        border: none;
+                        background-color: transparent;
+                        padding: 0;
+
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 4px;
+                            height: 4px;
+                            background-color: #A9A9A9;
+                            margin-left: 2px;
+                            margin-right: 2px;
+                        }
+                    }
+
+                    .open-create-menu {
+                        right: 0;
+                    }
+                }
+            }
+
+            .tbody {
+                display: block;
+                width: 100%;
+
+
+                .name {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px 10px 30px;
+                    width: 20%;
+                    cursor: pointer;
+                    color: $data-table-contents-color;
+
+                    span {
+                        color: #3B7CFF;
+                    }
+
+                    i {
+                        float: right;
+                        line-height: 18px;
+                        cursor: pointer;
+                    }
+                }
+
+                .cloud-environment {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    text-align: center;
+                    width: 20%;
+                    color: $data-table-contents-color;
+                }
+
+                .app-services {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    text-align: center;
+                    width: 15%;
+                    color: $data-table-contents-color;
+                }
+
+                .data-services {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    text-align: center;
+                    width: 15%;
+                    color: $data-table-contents-color;
+                }
+
+                .product-environment {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    width: 24%;
+                    color: $data-table-contents-color;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .edit {
+                    vertical-align: top;
+                    padding: 10px 15px;
+                    width: 6%;
+                    float: right;
+                    text-align: right;
+                    position: relative;
+
+                    .edit-btn {
+                        border: none;
+                        background-color: transparent;
+                        padding: 0;
+
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 4px;
+                            height: 4px;
+                            background-color: #A9A9A9;
+                            margin-left: 2px;
+                            margin-right: 2px;
+                        }
+                    }
+
+                    .open-create-menu {
+                        right: 0;
+                        width: 150px;
+                    }
+                }
+            }
+
+            .inner-table {
+                display: block;
+                width: 100%;
+
+                .thead {
+                    background-color: transparent;
+                    border-radius: 0px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #3b4859;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+
+                .tbody {
+                    display: block;
+                    width: 100%;
+                    border-bottom: 1px solid $department-background-color;
+
+                    &:nth-child(2n-4) {
+                        background-color: $department-background-color;
+                    }
+                }
+            }
+        }
+
+        .environments {
+            display: block;
+            width: 100%;
+            padding: 10px 30px;
+
+            .environments-inner {
+                border: 1px solid #0077B6;
+                background-color: #fcfdfd;
+
+                .heading {
+                    background-color: #0077B6;
+                    padding: 5px 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h3 {
+                        display: inline-block;
+                        color: #FFFFFF;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                    }
+
+                    .buttons {
+                        float: right;
+                        width: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        select {
+                            width: 120px;
+                            height: 22px;
+                            font-size: 12px;
+                            line-height: 22px;
+                            font-weight: 500;
+                            white-space: nowrap;
+                            overflow: hidden !important;
+                            text-overflow: ellipsis;
+                            cursor: pointer;
+                            color: #0077B6;
+                            border: none;
+                            padding: 0 2px;
+                            border-radius: 2px;
+                            background-image: linear-gradient(to top, #efefef, #efefef, #efefef, #eeeeee, #eeeeee);
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .btn {
+                            margin-left: 5px;
+                            padding: 5px;
+                            color: #0077B6;
+                            font-size: 14px;
+                            line-height: 16px;
+                            height: 22px;
+                        }
+                    }
+                }
+
+                .content {
+                    display: block;
+                    padding: 10px 40px 10px 20px;
+
+                    .tabs-container {
+                        display: flex;
+                        width: 100%;
+
+                        .tabs {
+                            width: 200px;
+                            display: flex;
+
+                            ul {
+                                display: block;
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+                                width: 100%;
+
+                                li {
+                                    display: block;
+                                    width: 100%;
+                                    background-color: #00B4D8;
+                                    margin-bottom: 1px;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    padding: 10px 20px 10px 30px;
+                                    color: #FFFFFF;
+                                    position: relative;
+                                    cursor: pointer;
+
+                                    &::before {
+                                        background-color: #FFFFFF;
+                                        border: 1px solid #0077B6;
+                                        width: 12px;
+                                        height: 12px;
+                                        content: "";
+                                        position: absolute;
+                                        left: 10px;
+                                        top: 13px;
+                                    }
+
+                                    &:hover {
+                                        background-color: #CBDCEB;
+                                        color: #0077B6;
+                                    }
+
+                                    &.active {
+                                        background-color: #CBDCEB;
+                                        color: #0077B6;
+                                    }
+                                }
+                            }
+                        }
+
+                        .tabs-content {
+                            display: flex;
+                            width: calc(100% - 200px);
+                            padding-left: 30px;
+
+                            ul {
+                                display: block;
+                                width: 100%;
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+
+                                li {
+                                    display: flex;
+                                    width: 100%;
+                                    flex-wrap: wrap;
+                                    margin-bottom: 3px;
+
+                                    .icon {
+                                        display: flex;
+                                        width: 60px;
+                                        height: 40px;
+                                        padding: 2px;
+                                        background-color: #CBDCEB;
+                                        margin-right: 2px;
+
+                                        .gauge {
+                                            position: relative;
+                                            width: 56px;
+                                            height: 36px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background-color: #f7f7f7;
+
+                                            .gauge__container {
+                                                width: 44px;
+                                                height: 28px;
+                                                position: relative;
+
+                                                img {
+                                                    max-width: 100%;
+                                                    height: auto;
+                                                }
+
+                                                .gauge__center {
+                                                    z-index: 3;
+                                                    position: absolute;
+                                                    background-color: #1d1c1d;
+                                                    border-radius: 50%;
+                                                    width: 6px;
+                                                    height: 6px;
+                                                    top: 18px;
+                                                    left: 19px;
+                                                }
+
+                                                .gauge__needle {
+                                                    z-index: 4;
+                                                    background-color: #1d1c1d;
+                                                    height: 2px;
+                                                    width: 15px;
+                                                    left: 22px;
+                                                    top: 20px;
+                                                    position: absolute;
+                                                    -webkit-transform-origin: left center;
+                                                    -moz-transform-origin: left center;
+                                                    -ms-transform-origin: left center;
+                                                    -o-transform-origin: left center;
+                                                    transform-origin: left center;
+                                                    -webkit-transition: all 1s ease-in-out;
+                                                    -moz-transition: all 1s ease-in-out;
+                                                    -ms-transition: all 1s ease-in-out;
+                                                    -o-transition: all 1s ease-in-out;
+                                                    transition: all 1s ease-in-out;
+                                                }
+                                            }
+                                        }
+
+
+                                    }
+
+                                    .heading {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        width: calc(100% - 62px);
+                                        background-color: #CBDCEB;
+                                        padding: 0;
+
+
+                                        &.full {
+                                            width: 100%;
+
+                                            span {
+                                                padding: 0 15px;
+                                            }
+                                        }
+
+                                        span {
+                                            display: flex;
+                                            width: 100%;
+                                            padding: 0 30px;
+                                            font-size: 16px;
+                                            line-height: 40px;
+                                            font-weight: 600;
+                                            color: #0077B6;
+                                            cursor: pointer;
+                                        }
+
+                                        .icon {
+                                            display: flex;
+                                            align-items: center;
+                                            width: auto;
+                                            cursor: pointer;
+
+                                            .fa-icon {
+                                                line-height: 40px;
+                                                margin-right: 5px;
+                                                color: #8392A7;
+                                            }
+
+                                            .edit {
+                                                display: flex;
+                                                width: 20px;
+                                                height: 40px;
+                                                padding: 0;
+                                                position: relative;
+                                                align-items: center;
+
+                                                .bars {
+                                                    display: flex;
+                                                    width: 100%;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                    height: 20px;
+
+                                                    span {
+                                                        display: block;
+                                                        width: 4px;
+                                                        height: 4px;
+                                                        padding: 0;
+                                                        margin: 0 5px;
+                                                        background-color: #0077B6;
+                                                    }
+                                                }
+
+                                            }
+                                        }
+                                    }
+
+                                    .content-table {
+                                        display: block;
+                                        width: 100%;
+                                        background-color: #CBDCEB;
+                                        padding: 10px;
+                                        overflow: hidden;
+                                        overflow-x: auto;
+
+                                        .table {
+                                            width: 1000px;
+                                            display: block;
+                                            flex-wrap: wrap;
+                                            background-color: #FFFFFF;
+                                            border-radius: 10px 10px 0px 0px;
+                                            font-size: 13px;
+
+                                            .thead {
+                                                display: flex;
+                                                width: 100%;
+                                                background-color: #D9E4F2;
+                                                border-radius: 10px 10px 0px 0px;
+                                                margin: 0;
+                                                padding: 10px 15px;
+
+                                                .th {
+                                                    &:nth-child(1) {
+                                                        width: 30%;
+                                                        padding-left: 15px;
+                                                    }
+
+                                                    &:nth-child(2) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(3) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(3) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(4) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(5) {
+                                                        width: 15%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(6) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+                                                }
+                                            }
+
+                                            .tbody {
+                                                width: 100%;
+                                                display: block;
+                                                flex-wrap: wrap;
+                                                overflow: hidden;
+                                                overflow-x: auto;
+                                                background-color: #F8F9FB;
+
+                                                &:nth-child(2n-1) {
+                                                    background-color: #FFFFFF;
+                                                }
+
+                                                .td {
+                                                    padding: 10px 15px;
+                                                    width: 25%;
+
+                                                    &.title {
+                                                        cursor: pointer;
+                                                    }
+
+                                                    strong {
+                                                        font-weight: 600;
+                                                        color: #2662F0;
+                                                        width: 100%;
+                                                        display: block;
+
+                                                        i {
+                                                            float: right;
+                                                            color: #8392A7;
+                                                            font-size: 13px;
+                                                            line-height: 20px;
+                                                        }
+                                                    }
+
+                                                }
+                                            }
+                                        }
+
+                                        .performance-table {
+                                            display: block;
+                                            width: 1000px;
+
+                                            .tbody {
+                                                width: 100%;
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                background-color: #F8F9FB;
+
+                                                &:nth-child(2n-1) {
+                                                    background-color: #FFFFFF;
+                                                }
+
+                                                .td {
+                                                    padding: 10px 15px;
+
+                                                    &:nth-child(1) {
+                                                        width: 30%;
+                                                        padding-left: 30px;
+                                                    }
+
+                                                    &:nth-child(2) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(3) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(3) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(4) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(5) {
+                                                        width: 15%;
+                                                        text-align: center;
+                                                    }
+
+                                                    &:nth-child(6) {
+                                                        width: 11%;
+                                                        text-align: center;
+                                                    }
+
+                                                    span {
+                                                        color: #2662F0;
+                                                        padding-left: 15px;
+                                                    }
+
+                                                    strong {
+                                                        font-weight: 600;
+                                                        color: #2662F0;
+                                                    }
+
+                                                    .progress-circle {
+                                                        text-align: center;
+
+                                                        &.green {
+                                                            color: #B8E986;
+                                                        }
+
+                                                        &.orange {
+                                                            color: #FF9429;
+                                                        }
+
+                                                        &.yellow {
+                                                            color: #FFF700;
+                                                        }
+
+                                                        &.red {
+                                                            color: #E13A20;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1365px) {
+    .department-wise-container {
+        .department-fliters-container {
+            .data-table {
+                overflow-x: scroll;
+
+                .thead,
+                .tbody {
+                    width: 1210px;
+                }
+            }
+        }
+    }
+}

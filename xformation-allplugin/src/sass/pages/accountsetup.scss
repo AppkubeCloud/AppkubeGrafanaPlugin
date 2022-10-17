@@ -1,0 +1,177 @@
+.accountsetup-page-container{
+    .account-setup-container{
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 6px -4px #3b4859;
+        box-shadow: 0px 0px 6px -4px #3b4859;
+        padding: 15px;
+        border: 1px solid rgb(245, 246, 245);
+        .heading{
+            display: block;
+            border-bottom: 1px dashed rgb(131, 146, 167);
+            line-height: 26px;
+            color: $asset-contents-color;
+            font-size: 15px;
+            font-weight: 600;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .account-setup-tab-contents{
+            padding: 0px 20px 20px;
+            h4{
+                display: block;
+                line-height: 26px;
+                color: $asset-contents-color;
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            .contents{
+                padding-left: 20px;
+                padding-bottom: 20px;
+                display: block;
+                strong{
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: $asset-contents-color;
+                    line-height: 22px;
+                    padding-bottom: 3px;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: $asset-contents-color;
+                    display: block;
+                    line-height: 22px;
+                }
+                a{
+                    color: #2662f0;
+                }
+                ul{
+                    padding-left: 20px;
+                    li{
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: $asset-contents-color;
+                        line-height: 22px;
+                        padding-bottom: 2px;
+                    }
+                }
+            }
+            .account-setup-left-contents{
+                border-right: 1px solid #ddd;
+            }
+            .account-setup-right-contents{
+                padding-top: 20px;
+            }
+            .sub-heading{
+                border-bottom: 1px solid #3b4859;
+                padding-bottom: 15px;
+                margin-bottom: 20px;
+            }
+            .collapse-contents{
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 20px 0 0 0;
+                    li{
+                        display: block;
+                        padding-bottom: 5px;
+                        cursor: pointer;
+                        .caret-right{
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 5px 0 5px 8px;
+                            border-color: transparent transparent transparent #8392A7;
+                            margin-top: -3px;
+                            margin-right: 5px;
+                            cursor: pointer;
+                        }
+                        .caret-down{
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 8px 5px 0 5px;
+                            border-color: #8392a7 transparent transparent transparent;
+                            margin-top: 0px;
+                            margin-right: 5px;
+                            cursor: pointer;
+                        }
+                        .show{
+                            padding-left: 30px;
+                            margin-top: 5px;
+                        }
+                        .selected{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.modal-container{
+    .collapse-contents{
+        background-color: #ffffff;
+        border: 1px solid #8392a7;
+        border-radius: 4px;
+        padding: 0 15px;
+        min-height: 150px;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            li{
+                display: block;
+                padding-bottom: 5px;
+                .caret-right{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 5px 0 5px 8px;
+                    border-color: transparent transparent transparent #8392A7;
+                    margin-top: -3px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+                .caret-down{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 8px 5px 0 5px;
+                    border-color: #8392a7 transparent transparent transparent;
+                    margin-top: 0px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+                .show{
+                    padding-left: 30px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .accountsetup-page-container {
+        .account-setup-container {
+            .account-setup-tab-contents {
+                .account-setup-left-contents{
+                    border: none;
+                }
+            }
+        }
+    }
+}

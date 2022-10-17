@@ -1,0 +1,513 @@
+.create-new-usecase {
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 570px;
+    padding-left: 15px;
+
+    .basic-details {
+        border-bottom: 1px dashed #8392A7;
+        margin-bottom: 30px;
+
+        h4 {
+            color: #3B4859;
+            font-weight: 500;
+        }
+
+        .input-group {
+            margin-top: 15px;
+            display: block;
+            margin-bottom: 20px;
+            width: 500px;
+
+            label {
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 500;
+                color: #414d55;
+                margin-bottom: 8px;
+                display: block;
+            }
+
+            .name-usecase {
+                height: 40px;
+            }
+
+            .form-control {
+                width: 100%;
+                color: #757f8a;
+                padding: 10px 15px;
+                font-style: italic;
+                border: 1px solid #8392a7;
+                border-radius: 0.25rem !important;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .assign {
+                width: 100%;
+                height: 40px;
+                border-color: #8392a7;
+                color: #757f8a;
+                border-radius: 0.25rem !important;
+
+                &:focus-visible {
+                    outline: none;
+                }
+
+            }
+        }
+
+        .menu-dropdown {
+            margin-bottom: 30px;
+        }
+    }
+
+    .workflow-detail {
+        h4 {
+            color: #3b4859;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .add-workflow-btn {
+            margin-top: 15px;
+            margin-bottom: 20px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .add-workflow-list {
+        border-left: 2px solid #9ec7fc;
+        height: 100%;
+        padding-left: 20px;
+        position: relative;
+
+        span {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-color: #b1c9f8;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 32px;
+            color: #2662f0;
+            position: absolute;
+            left: -17px;
+            top: 5px;
+            z-index: 1;
+        }
+
+        .workflow-type {
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            width: 520px;
+            position: relative;
+
+            .form-control {
+                display: inline-block;
+                width: 50%;
+                border: 1px solid #399ef7;
+                background-color: #ffffff;
+                text-align: center;
+                padding: 8px;
+                border-radius: 3px;
+                box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .close {
+                display: inline-block;
+                width: 25%;
+                text-align: right;
+
+                button {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                    background-color: red;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    border: none;
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+
+            &::before,
+            &::after {
+                right: calc(100% - 31px);
+                top: 9%;
+                border: solid transparent;
+                content: "";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+            }
+
+            &::before {
+                border-color: rgba(194, 225, 245, 0);
+                border-right-color: #399ef7;
+                border-width: 13px;
+                left: -25px;
+                top: 6px;
+            }
+
+            &::after {
+                border-color: rgba(136, 183, 213, 0);
+                border-right-color: #fff;
+                border-width: 11px;
+                left: -21px;
+                top: 8px;
+            }
+        }
+
+        .workflow-details-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-bottom: 25px;
+
+            .workflow-dropdown {
+                width: 300px;
+
+                label {
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    color: #414d55;
+                    margin-bottom: 8px;
+                    display: block;
+                }
+
+                select {
+                    width: 100%;
+                    height: 35px;
+                    border-color: #8392a7;
+                    color: #757f8a;
+                    font-style: italic;
+                    border-radius: 0.25rem !important;
+                }
+            }
+
+            .description {
+
+                margin-left: 15px;
+                width: -webkit-fill-available;
+
+                label {
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    color: #414d55;
+                    margin-bottom: 8px;
+                    display: block;
+                }
+
+                .form-control {
+                    width: 100%;
+                    border-color: #8392a7;
+                    color: #757f8a;
+                    padding: 8px 15px;
+                    font-size: 14px;
+                    height: 35px;
+                    font-style: italic;
+                    border: 1px solid #8392a7;
+                    border-radius: 0.25rem !important;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                .assign {
+                    width: 100%;
+                    height: 40px;
+                    border-color: #8392a7;
+                    color: #757f8a;
+                    border-radius: 0.25rem !important;
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+
+                }
+            }
+        }
+
+        .add-stage-btn {
+            border: none;
+            margin-bottom: 25px;
+            font-size: 12px;
+            padding: 6px 15px;
+            color: #fff;
+            background: #3B7CFF;
+
+            i {
+                margin-right: 8px;
+            }
+        }
+
+        .add-stage-name {
+            padding-bottom: 25px;
+
+            .form-control {
+                border-color: #8392a7;
+                color: #757f8a;
+                padding: 8px 15px;
+                font-size: 14px;
+                height: 35px;
+                font-style: italic;
+                border: 1px solid #8392a7;
+                border-radius: 0.25rem !important;
+
+                &:focus-visible {}
+            }
+        }
+
+        .requirement-details {
+            .requirement-inner-content {
+                padding-bottom: 25px;
+
+                h4 {
+                    color: #3B4859;
+                    font-weight: 500;
+                }
+
+                table {
+                    width: 100%;
+                    border-spacing: 10px;
+                    border-collapse: collapse;
+
+                    thead {
+                        tr {
+                            th {
+                                text-align: center;
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 20px;
+                                color: #414D55;
+
+                                &:nth-child(1) {
+                                    width: 20%;
+                                }
+
+                                &:nth-child(2) {
+                                    width: 20%;
+                                }
+
+                                &:nth-child(3) {
+                                    width: 15%;
+                                }
+
+                                &:nth-child(4) {
+                                    width: 15%;
+                                }
+
+                                &:nth-child(5) {
+                                    width: 25%;
+                                }
+
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            border-bottom: 10px solid transparent;
+
+                            td {
+
+                                select {
+                                    width: 95%;
+                                    height: 35px;
+                                    border-color: #8392a7;
+                                    color: #757f8a;
+                                    font-style: italic;
+                                    border-radius: 0.25rem !important;
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                }
+
+                                &:nth-child(1) {
+                                    width: 15%;
+                                }
+
+                                &:nth-child(2) {
+                                    width: 20%;
+                                }
+
+                                &:nth-child(3) {
+                                    width: 15%;
+                                }
+
+                                &:nth-child(4) {
+                                    width: 15%;
+                                }
+
+                                &:nth-child(5) {
+                                    width: 25%;
+                                }
+
+                                &:nth-child(6) {
+                                    width: 5%;
+                                }
+                            }
+
+                            .user-name {
+                                font-size: 14px;
+                                line-height: 18px;
+                                font-weight: 400;
+                                color: #757f8a;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                margin-bottom: 10px;
+
+                                .add-stage-name {
+                                    padding-bottom: 0;
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            .start-date {
+
+
+                                .form-control {
+                                    width: 95%;
+                                    height: 35px;
+                                    color: #757f8a;
+                                    border-radius: 0.25rem !important;
+                                    border: 1px solid #8392a7;
+                                    font-size: 12px;
+                                    padding: 6px 12px;
+                                }
+                            }
+
+                            .comment-box {
+                                .form-control {
+                                    width: 100%;
+                                    height: 35px;
+                                    color: #757f8a;
+                                    border-radius: 0.25rem !important;
+                                    border: 1px solid #8392a7;
+                                    font-size: 12px;
+                                    padding: 6px 12px;
+                                }
+                            }
+
+                            .remove-btn {
+                                margin-bottom: 10px;
+                                text-align: end;
+
+                                i {
+                                    width: 25px;
+                                    height: 25px;
+                                    border-radius: 50%;
+                                    background: #2662f0;
+                                    color: #fff;
+                                    text-align: center;
+                                    line-height: 25px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .basic-details-btn {
+        text-align: right;
+        margin-bottom: 15px;
+
+        .btn-primary {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 6px 15px;
+            color: #fff;
+            background: #3B7CFF;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .project-over-view-container {
+        .project-over-view-section {
+            .fliter-container {
+                .fliter-right-content {
+                    display: inline-flex !important;
+                    align-items: center !important;
+                    justify-content: start !important;
+                    margin-top: 15px;
+
+                    .image {
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+            .project-over-view-inner-content {
+                display: flex;
+                display: -webkit-box;
+                overflow: hidden;
+                overflow-x: auto;
+                width: 100%;
+
+
+
+                .project-over-view-left-content {
+                    .sidebar {
+                        ul {
+                            li {
+                                width: 210px;
+                                padding: 10px;
+                                margin-right: 10px;
+
+                                &.active {
+                                    width: 225px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px)and(max-width: 992px) {
+    .dashboard-content {
+        .basic-details {
+            .input-group {
+                width: 350px;
+            }
+        }
+
+        .add-workflow-list {
+            .workflow-type {
+                width: 370px;
+            }
+
+            .description {
+                width: 350px;
+            }
+        }
+    }
+}

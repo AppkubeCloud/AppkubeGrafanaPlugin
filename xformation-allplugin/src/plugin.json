@@ -1,0 +1,177 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "app",
+  "name": "Asset manager",
+  "id": "xformation-assetmanager-ui-plugin",
+  "info": {
+    "description": "Asset manager",
+    "author": {
+      "name": "Synectiks"
+    },
+    "logos": {
+      "small": "img/assets.svg",
+      "large": "img/assets.svg"
+    },
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "Plugins",
+      "addToNav": true,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/environments"
+    },
+    {
+      "type": "page",
+      "name": "AssetManager",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/environments"
+    },
+    {
+      "type": "page",
+      "name": "Environments",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/environments"
+    },
+    {
+      "type": "page",
+      "name": "AmazonServices",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/amazon-services"
+    },
+    {
+      "type": "page",
+      "name": "Kubernetes",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/kubernetes"
+    },
+    {
+      "type": "page",
+      "name": "AccountSetup",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/account-setup"
+    },
+    {
+      "type": "page",
+      "name": "DepartmentWiseCharts",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/department-wise-charts"
+    },
+    {
+      "type": "page",
+      "name": "StorageViewDetails",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/view-storage-details"
+    },
+    {
+      "type": "page",
+      "name": "DepartmentWiseProducts",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/department-wise-products"
+    },
+    {
+      "type": "page",
+      "name": "ProductWiseServicesSla",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/product-wise-services-sla"
+    },
+    {
+      "type": "page",
+      "name": "StorageDetails",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/asset-manager/storage-details"
+    },
+    {
+      "type": "page",
+      "name": "WorkflowEngine",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/workflow-engine/dashboard"
+    },
+    {
+      "type": "page",
+      "name": "Dashboard",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/workflow-engine/dashboard"
+    },
+    {
+      "type": "page",
+      "name": "ProjectWise",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/workflow-engine/project-wise"
+    },
+    {
+      "type": "page",
+      "name": "CreateUsecase",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/workflow-engine/create-usecase"
+    },
+    {
+      "type": "page",
+      "name": "MatrixView",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/workflow-engine/matrix-view"
+    },
+    {
+      "type": "page",
+      "name": "Procurement",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/workflow-engine/procurement"
+    },
+    {
+      "type": "page",
+      "name": "ProjectOverView",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/workflow-engine/project-overview"
+    },
+    {
+      "type": "page",
+      "name": "ResourceWiseViewAllTasks",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/plugins/workflow-engine/resource-wise-view-all-tasks"
+    }
+  ],
+  "dependencies": {
+    "grafanaDependency": ">=8.0.0",
+    "plugins": []
+  }
+}

@@ -1,0 +1,374 @@
+.services-sla-container {
+    background-color: $department-background-color;
+    padding: 15px;
+
+    .common-container {
+        background-color: $asset-container-background-color;
+        box-shadow: 0px 2px 4px $asset-container-border-color;
+        border-radius: 10px;
+        padding: 20px;
+        border-bottom: none;
+        margin-bottom: 15px;
+
+    }
+
+    .services-heading {
+        border-bottom: 1px solid #f5f6f5;
+        margin-left: -30px;
+        margin-right: -30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 24px;
+        color: #3b4859;
+        font-size: 16px;
+        font-weight: 600;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    .services-sla-boxs {
+        display: flex;
+        padding: 20px 15px;
+        background-color: #F9FAFF;
+        border-radius: 10px;
+        margin-top: 10px;
+        white-space: nowrap;
+
+        .services-sla-inner {
+            overflow: hidden;
+            overflow-x: scroll;
+            display: flex;
+            width: 100%;
+
+            .services-sla-box {
+                display: flex;
+                flex: 0 0 300px;
+                flex-wrap: wrap;
+                width: 300px;
+                min-height: 150px;
+                margin-right: 20px;
+                background: #FFFFFF;
+                border: 0.5px solid rgba(38, 128, 235, 0.3);
+                border-radius: 10px;
+                box-shadow: 0px 1px 4px #00000029;
+
+                &.active {
+                    border: 3px solid rgba(38, 128, 235, 0.8);
+                }
+
+                .heading {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    color: #000000;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    border-bottom: 0.5px solid rgba(38, 128, 235, 0.3);
+                    box-shadow: 0px 1px 6px #3b7cff29;
+                }
+
+                .contents {
+                    display: block;
+                    width: 100%;
+                    padding-bottom: 15px;
+
+                    ul {
+                        display: block;
+                        width: 100%;
+                        padding: 20px 15px 0px;
+                        margin: 0;
+                        list-style: none;
+
+                        li {
+                            display: block;
+                            width: 100%;
+                            padding-bottom: 10px;
+                            font-size: 13px;
+                            line-height: 18px;
+                            color: #000;
+                            font-weight: 500;
+
+                            label {
+                                display: inline-block;
+                                width: 80%;
+                            }
+
+                            span {
+                                display: inline-block;
+                                width: 20%;
+                                text-align: right;
+                            }
+                        }
+                    }
+
+                    .production-heading {
+                        display: block;
+                        width: 100%;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        text-align: center;
+                        font-size: 17px;
+                        margin-top: 10px;
+
+                        label {
+                            line-height: 17px;
+                            color: #202020;
+                            font-weight: 600;
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+
+                        span {
+                            line-height: 17px;
+                            color: #202020;
+                            font-weight: 600;
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                    }
+
+                    .production-chart {
+                        display: table;
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding: 15px;
+
+                        canvas {
+                            width: 100% !important;
+                        }
+                    }
+                }
+
+                &:hover {
+                    border-color: rgba(38, 128, 235, 0.6);
+
+                    .heading {
+                        border-color: rgba(38, 128, 235, 0.6);
+                    }
+                }
+
+            }
+        }
+    }
+
+    .services-tabs {
+        display: block;
+
+        .tabs {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: block;
+
+            li {
+                width: 23.5%;
+                margin-right: 0.2%;
+                display: inline-block;
+                background: #FFFFFF;
+                box-shadow: 3px 3px 6px rgba(190, 190, 190, 0.1);
+                border: 0.5px solid rgba(112, 112, 112, 0.1);
+                border-radius: 5px 5px 0px 0px;
+                font-size: 14px;
+                font-weight: 600;
+                color: #191919;
+                text-align: left;
+                line-height: 24px;
+                padding: 10px 15px;
+                cursor: pointer;
+
+                &.active {
+                    box-shadow: none;
+                    border-bottom: none;
+                    padding-bottom: 12px;
+                }
+            }
+        }
+
+        .services-contents {
+            display: none;
+            width: 100%;
+            padding: 10px 5px;
+            padding-top: 0px;
+            margin-top: -2px;
+            background: #FFFFFF;
+            box-shadow: 3px 3px 6px rgba(190, 190, 190, 0.1);
+            border: 0.5px solid rgba(112, 112, 112, 0.1);
+            border-radius: 5px 5px 0px 0px;
+
+            &.active {
+                display: block;
+            }
+
+            .environment-services {
+                display: block;
+                padding-top: 30px;
+                padding-bottom: 0px;
+
+                .heading {
+                    display: block;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    background-color: #CBDCEB;
+                    margin-bottom: 30px;
+
+                    h3 {
+                        display: block;
+                        margin-bottom: 0;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #0077B6;
+                        font-weight: 500;
+                        padding-left: 15px;
+                    }
+
+                    .show-more {
+                        display: inline-block;
+                        color: #2680EB;
+                        font-size: 13px;
+                        line-height: 32px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+
+                    .search-control {
+                        position: relative;
+                        float: right;
+                        width: 70%;
+
+                        .input-group-text {
+                            max-width: 100%;
+                            text-align: left;
+                            padding-right: 15px;
+                            padding-left: 30px;
+                            width: 100%;
+                            border: 1px solid #ced4da;
+                            background-color: #ffffff;
+                            border-radius: 4px;
+                            color: #8998AC;
+                        }
+
+                        button {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            z-index: 1;
+                            cursor: pointer;
+                            border: none;
+                            background-color: transparent;
+                            width: 32px;
+                            height: 32px;
+                            color: #8998AC;
+                        }
+                    }
+                }
+
+                .services-boxes {
+                    display: block;
+
+                    .service-box {
+                        display: inline-block;
+                        width: 222px;
+                        min-height: 210px;
+                        margin-left: 8px;
+                        margin-right: 8px;
+                        margin-bottom: 15px;
+                        background: #FFFFFF 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 3px 6px #00000029;
+                        border: 0.25px solid rgba(38, 128, 235, 0.3);
+                        border-radius: 5px;
+                        overflow: hidden;
+
+                        .heading {
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 14px;
+                            line-height: 18px;
+                            font-weight: 600;
+                            color: #000000;
+                            padding-top: 7px;
+                            padding-bottom: 7px;
+                            border-bottom: 0.5px solid rgba(38, 128, 235, 0.3);
+                            box-shadow: 0px 1px 6px #3b7cff29;
+                            background-color: #FFFFFF;
+                            margin-bottom: 10px;
+                        }
+
+                        .contents {
+                            display: block;
+                            width: 100%;
+
+                            .total-cost-text {
+                                display: block;
+                                width: 100%;
+                                font-size: 11px;
+                                line-height: 18px;
+                                color: #000;
+                                font-weight: 500;
+                                text-align: center;
+                            }
+
+                            .quality-score-text {
+                                display: block;
+                                width: 100%;
+                                font-size: 11px;
+                                line-height: 18px;
+                                color: #000;
+                                font-weight: 500;
+                                text-align: center;
+                            }
+
+                            ul {
+                                display: block;
+                                width: 100%;
+                                padding: 10px 10px;
+                                margin: 0;
+                                list-style: none;
+
+                                li {
+                                    display: block;
+                                    width: 100%;
+                                    padding-bottom: 3px;
+                                    font-size: 11px;
+                                    line-height: 18px;
+                                    color: #000;
+                                    font-weight: 500;
+
+                                    label {
+                                        display: inline-block;
+                                        width: 70%;
+                                    }
+
+                                    span {
+                                        display: inline-block;
+                                        width: 30%;
+                                        text-align: right;
+
+                                        span {
+                                            display: inline-block;
+                                            width: 10px;
+                                            height: 10px;
+                                            border-radius: 3px;
+                                            vertical-align: middle;
+                                            margin-top: -3px;
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

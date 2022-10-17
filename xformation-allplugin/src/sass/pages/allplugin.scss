@@ -1,0 +1,107 @@
+.all-plugins-page-container {
+  .plugins-tabs-container {
+    .tabs {
+      list-style: none;
+      display: block;
+      border-bottom: 1px solid #8392A7;
+
+      li {
+        display: inline-block;
+        padding: 0;
+        color: #000000;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        background-color: #ffffff;
+        border-right: 1px solid #8392A7;
+
+        a {
+          padding: 10px 30px;
+          display: block;
+
+          &.active {
+            background-color: #8392A7;
+            color: #ffffff;
+          }
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    .tabs-container {
+      padding: 0;
+      display: block;
+      background-color: #ffffff;
+
+      .containt {
+        display: block;
+        width: 100%;
+
+        &.d-none {
+          display: none;
+        }
+
+        .page-tabs {
+          display: flex;
+          width: 100%;
+
+          .tab {
+            width: 250px;
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            border-right: 1px solid #8392A7;
+
+            ul {
+              display: block;
+              width: 100%;
+              list-style: none;
+
+              li {
+                display: block;
+                width: 100%;
+                color: #000000;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                background-color: #ffffff;
+                border-bottom: 1px solid #8392A7;
+
+                a {
+                  padding: 10px 15px;
+                  display: block;
+                  width: 100%;
+
+                  &.active {
+                    background-color: #8392A7;
+                    color: #ffffff;
+                  }
+                }
+
+              }
+            }
+          }
+
+          .tab-container {
+            display: inline-flex;
+            padding-left: 0px;
+            width: calc(100% - 250px);
+
+            .containt {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 767px) {}

@@ -168,6 +168,14 @@
       "defaultNav": false,
       "role": "Admin",
       "path": "/a/%PLUGIN_ID%/plugins/workflow-engine/resource-wise-view-all-tasks"
+    },
+    {
+      "type": "page",
+      "name": "TopologyView",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/%PLUGIN_ID%/topology-view"
     }
   ],
   "dependencies": {

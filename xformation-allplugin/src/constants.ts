@@ -28,6 +28,7 @@ export enum ROUTES {
   Procurement = 'plugins/workflow-engine/procurement',
   ProjectOverView = 'plugins/workflow-engine/project-overview',
   ResourceWiseViewAllTasks = 'plugins/workflow-engine/resource-wise-view-all-tasks',
+  TopologyView = 'topology-view',
 } 
 
 

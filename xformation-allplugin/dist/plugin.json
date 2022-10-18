@@ -14,7 +14,7 @@
     },
     "screenshots": [],
     "version": "1.0.0",
-    "updated": "2022-10-17"
+    "updated": "2022-10-18"
   },
   "includes": [
     {
@@ -168,6 +168,14 @@
       "defaultNav": false,
       "role": "Admin",
       "path": "/a/xformation-assetmanager-ui-plugin/plugins/workflow-engine/resource-wise-view-all-tasks"
+    },
+    {
+      "type": "page",
+      "name": "TopologyView",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/xformation-assetmanager-ui-plugin/topology-view"
     }
   ],
   "dependencies": {

@@ -7870,6 +7870,326 @@ a:focus, a:hover {
           .owrkflow-resource-wise-View-container .resource-wise-View-page-container .average-section .statistics-graph .chartbar-content .recharts-layer tspan {
             font-size: 12px; }
 
+.topology-view-container {
+  background-color: #ffffff; }
+  .topology-view-container .topology-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000; }
+  .topology-view-container .search-box {
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C5C4C4;
+    border-radius: 5px;
+    position: relative; }
+    .topology-view-container .search-box .input-group-text {
+      background-color: #FFFFFF;
+      border: none;
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 15px;
+      text-align: left; }
+      .topology-view-container .search-box .input-group-text:focus {
+        outline: none; }
+    .topology-view-container .search-box i {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      line-height: 30px;
+      text-align: center; }
+  .topology-view-container .topology-view-contains {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid #000000; }
+    .topology-view-container .topology-view-contains .topology-left-nav {
+      display: inline-flex;
+      width: 118px;
+      padding-top: 75px;
+      padding-bottom: 75px;
+      padding-left: 8px;
+      padding-right: 8px;
+      background-color: #377AA0;
+      box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+      min-height: 991px; }
+      .topology-view-container .topology-view-contains .topology-left-nav ul {
+        padding: 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+        list-style: none; }
+        .topology-view-container .topology-view-contains .topology-left-nav ul li {
+          display: block;
+          width: 100%;
+          margin-bottom: 45px; }
+          .topology-view-container .topology-view-contains .topology-left-nav ul li:last-child {
+            margin-bottom: 0; }
+          .topology-view-container .topology-view-contains .topology-left-nav ul li a {
+            display: flex;
+            width: 102px;
+            height: 102px;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+            flex-wrap: wrap; }
+            .topology-view-container .topology-view-contains .topology-left-nav ul li a i {
+              display: block;
+              text-align: center; }
+            .topology-view-container .topology-view-contains .topology-left-nav ul li a span {
+              display: block;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 18px;
+              color: #000000;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+              width: 100%; }
+    .topology-view-container .topology-view-contains .topology-buttons {
+      display: inline-flex;
+      width: 140px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      min-height: 990px; }
+      .topology-view-container .topology-view-contains .topology-buttons ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        min-height: 930px; }
+        .topology-view-container .topology-view-contains .topology-buttons ul li {
+          display: inline-flex;
+          margin-right: 10px;
+          width: 55px;
+          min-height: 910px;
+          background-color: #377AA0;
+          position: relative; }
+          .topology-view-container .topology-view-contains .topology-buttons ul li:last-child {
+            margin-right: 0; }
+          .topology-view-container .topology-view-contains .topology-buttons ul li.waf span {
+            top: 450px;
+            left: 6px; }
+          .topology-view-container .topology-view-contains .topology-buttons ul li.api-gateway span {
+            top: 455px;
+            left: -25px; }
+          .topology-view-container .topology-view-contains .topology-buttons ul li span {
+            display: block;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            position: absolute;
+            transform: rotate(-90deg);
+            text-align: center;
+            white-space: nowrap; }
+    .topology-view-container .topology-view-contains .app-services {
+      background-color: #377AA0;
+      padding: 30px 15px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      width: calc(100% - 472px); }
+      .topology-view-container .topology-view-contains .app-services .heading {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        margin-bottom: 20px; }
+      .topology-view-container .topology-view-contains .app-services .app-services-container {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start; }
+        .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav {
+          display: flex;
+          background: #FFFFFF;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          overflow: hidden;
+          min-height: 894px;
+          width: 55px; }
+          .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul {
+            display: flex;
+            height: 894px;
+            flex-wrap: wrap;
+            width: 100%; }
+            .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li {
+              display: block;
+              width: 100%;
+              border-bottom: 1px solid #000000;
+              position: relative; }
+              .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li span {
+                transform: rotate(-90deg);
+                position: absolute;
+                white-space: nowrap;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 19px;
+                line-height: 23px;
+                color: #000000; }
+              .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.orchestration {
+                height: 191px; }
+                .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.orchestration span {
+                  left: -30px;
+                  top: 85px; }
+              .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.business-service {
+                height: 385px; }
+                .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.business-service span {
+                  left: -46px;
+                  top: 180px; }
+              .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.common-service {
+                height: 318px; }
+                .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.common-service span {
+                  left: -46px;
+                  top: 150px; }
+        .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains {
+          display: flex;
+          width: calc(100% - 55px);
+          padding-left: 10px; }
+          .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(33.33333333333333% - 10px);
+            margin-right: 10px;
+            background: #FFFFFF;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            overflow: hidden; }
+            .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains:last-child {
+              margin-right: 0;
+              width: calc(33.33333333333333% - 0px); }
+            .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains .sub-heading {
+              display: block;
+              width: 100%;
+              text-align: center;
+              color: #000000;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 52px;
+              border: 0.5px solid #CCCCCC;
+              box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+              border-radius: 10px 10px 0px 0px; }
+            .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains ul {
+              display: flex;
+              width: 100%;
+              flex-wrap: wrap;
+              background: #FFFFFF;
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 10px;
+              list-style: none;
+              padding: 15px 10px 10px;
+              margin: 0;
+              overflow: hidden;
+              overflow-y: auto; }
+              .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains ul li {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                padding-bottom: 10px; }
+                .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains ul li a {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #FFFFFF;
+                  border: 0.5px solid #2680EB;
+                  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+                  border-radius: 5px;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 20px;
+                  width: 100%;
+                  padding: 10px 20px; }
+                  .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains ul li a:hover {
+                    color: #2680EB; }
+            .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains .orchestration-buttons {
+              height: 142px; }
+            .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains .business-service-buttons {
+              height: 385px; }
+            .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains .common-service-buttons {
+              height: 318px; }
+    .topology-view-container .topology-view-contains .data-services-right {
+      float: right;
+      width: 204px;
+      padding: 15px;
+      background-color: #377AA0;
+      min-height: 991px;
+      margin-left: 10px; }
+      .topology-view-container .topology-view-contains .data-services-right .data-heading {
+        display: block;
+        width: 100%;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 10px; }
+      .topology-view-container .topology-view-contains .data-services-right .data-services-buttons {
+        display: block;
+        width: 100%;
+        height: 445px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
+        border-radius: 10px; }
+        .topology-view-container .topology-view-contains .data-services-right .data-services-buttons:last-child {
+          margin-bottom: 0px; }
+        .topology-view-container .topology-view-contains .data-services-right .data-services-buttons .sub-heading {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          width: 100%;
+          background: #FFFFFF;
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+          border-radius: 10px 10px 0px 0px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 52px; }
+        .topology-view-container .topology-view-contains .data-services-right .data-services-buttons ul {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          list-style: none;
+          padding: 0;
+          margin-top: 15px; }
+          .topology-view-container .topology-view-contains .data-services-right .data-services-buttons ul li {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px; }
+            .topology-view-container .topology-view-contains .data-services-right .data-services-buttons ul li:last-child {
+              margin-bottom: 0px; }
+            .topology-view-container .topology-view-contains .data-services-right .data-services-buttons ul li i {
+              display: flex;
+              justify-content: center; }
+            .topology-view-container .topology-view-contains .data-services-right .data-services-buttons ul li span {
+              display: flex;
+              width: 100%;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+              justify-content: center;
+              margin-top: 5px; }
+
 /*************************** Wizard ********************/
 .wizard-container {
   margin-right: 20px; }

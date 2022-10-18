@@ -9,8 +9,6 @@ import { PLUGIN_BASE_URL } from '../../../constants';
 import { ROUTES } from '../../../constants';
 import { prefixRoute } from '../../../utils/utils.routing';
 
-
-
 const LOGOS: any = {
   aws: images.awsLogo,
   azure: images.microsoftAzureLogo,

@@ -250,7 +250,8 @@ export class ProductWiseServicesSla extends React.Component<any, any> {
 					<div
 						className={product == productName ? "services-sla-box active" : "services-sla-box"}
 						onClick={() => {
-							this.setState({ productName: product });
+							const envs = Object.keys(tableData[product]);
+							this.setState({ productName: product, environmentType: envs.length > 0 ? envs[0] : "" });
 						}}
 					>
 						<a className="heading">{product}</a>

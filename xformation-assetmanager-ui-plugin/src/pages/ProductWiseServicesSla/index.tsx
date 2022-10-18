@@ -26,8 +26,8 @@ export class ProductWiseServicesSla extends React.Component<any, any> {
 			},
 			accountId: '',
 			tableData: [],
-			environmentType: 'PROD',
-			productName: 'AUCTION'
+			environmentType: '',
+			productName: ''
 		};
 		this.breadCrumbs = [
 			{
@@ -59,15 +59,16 @@ export class ProductWiseServicesSla extends React.Component<any, any> {
 	manipulateServiceData = (services: any) => {
 		const treeData: any = [];
 		const { filterData } = this.state;
-		// const filteredNodes: any = {};
-		// const filteredClusters: any = {};
-		// const filteredEnvironment: any = {};
-		// const filteredServiceNature: any = {};
-		// const filteredProducts: any = {};
-		// let nodeIndex = 1;
-		// let clusterIndex = 1;
+		let firstProd = "";
+		let firstEnv = "";
 		services.forEach((service: any) => {
 			const { serviceNature, associatedProduct, associatedEnv, serviceType } = service.metadata_json;
+			if(!firstProd){
+				firstProd = associatedProduct;
+			}
+			if(!firstEnv){
+				firstEnv = associatedEnv;
+			}
 			const node = treeData[associatedProduct] || {};
 			const clusterData = node[associatedEnv] || {};
 			const environmentData = clusterData[serviceNature] || {};
@@ -85,12 +86,12 @@ export class ProductWiseServicesSla extends React.Component<any, any> {
 			node[associatedEnv] = clusterData;
 			treeData[associatedProduct] = node;
 		});
-		console.log(treeData);
 		this.setState({
 			tableData: treeData,
-			filterData
+			filterData,
+			environmentType: firstEnv,
+			productName: firstProd
 		});
-		// this.getAppDataServices(treeData);
 	};
 
 	convertObjectIntoArray = (obj: any) => {
@@ -205,15 +206,15 @@ export class ProductWiseServicesSla extends React.Component<any, any> {
 									serviceByType['End Usage'] = serviceByType['End Usage'] || 0;
 									for (let i = 0; i < servicearry.length; i++) {
 										serviceByType['performance'] =
-											serviceByType['performance'] + servicearry[i].performance['score'];
+											serviceByType['performance'] + servicearry[i].performance ? servicearry[i].performance['score'] : 0;
 										serviceByType['availability'] =
-											serviceByType['availability'] + servicearry[i].availability['score'];
+											serviceByType['availability'] + servicearry[i].availability ? servicearry[i].availability['score'] : 0;
 										serviceByType['security'] =
-											serviceByType['security'] + servicearry[i].security['score'];
+											serviceByType['security'] + servicearry[i].security ? servicearry[i].security['score'] : 0;
 										serviceByType['Reliabillity'] =
-											serviceByType['Reliabillity'] + servicearry[i].dataProtection['score'];
+											serviceByType['Reliabillity'] + servicearry[i].dataProtection ? servicearry[i].dataProtection['score'] : 0;
 										serviceByType['End Usage'] =
-											serviceByType['End Usage'] + servicearry[i].userExperiance['score'];
+											serviceByType['End Usage'] + servicearry[i].userExperiance ? servicearry[i].userExperiance['score'] : 0;
 
 										// totalCount = totalCount + parseInt(servicearry[i].stats.totalCostSoFar);
 									}
@@ -221,7 +222,6 @@ export class ProductWiseServicesSla extends React.Component<any, any> {
 							});
 						});
 				});
-				debugger
 				serviceByType['performance'] = serviceByType['performance'] / (appcount+datacount);
 				serviceByType['availability'] = serviceByType['availability'] / (appcount+datacount);
 				serviceByType['security'] = serviceByType['security'] / (appcount+datacount);
@@ -371,15 +371,15 @@ export class ProductWiseServicesSla extends React.Component<any, any> {
 									serviceByType['End Usage'] = serviceByType['End Usage'] || 0;
 									for (let i = 0; i < servicearry.length; i++) {
 										serviceByType['performance'] =
-											serviceByType['performance'] + servicearry[i].performance['score'];
+											serviceByType['performance'] + servicearry[i].performance ? servicearry[i].performance['score'] : 0;
 										serviceByType['availability'] =
-											serviceByType['availability'] + servicearry[i].availability['score'];
+											serviceByType['availability'] + servicearry[i].availability ? servicearry[i].availability['score'] : 0;
 										serviceByType['security'] =
-											serviceByType['security'] + servicearry[i].security['score'];
+											serviceByType['security'] + servicearry[i].security ? servicearry[i].security['score'] : 0;
 										serviceByType['Reliabillity'] =
-											serviceByType['Reliabillity'] + servicearry[i].dataProtection['score'];
+											serviceByType['Reliabillity'] + servicearry[i].dataProtection ? servicearry[i].dataProtection['score'] : 0;
 										serviceByType['End Usage'] =
-											serviceByType['End Usage'] + servicearry[i].userExperiance['score'];
+											serviceByType['End Usage'] + servicearry[i].userExperiance ? servicearry[i].userExperiance['score'] : 0;
 									}
 								}
 								servicesJSX.push(

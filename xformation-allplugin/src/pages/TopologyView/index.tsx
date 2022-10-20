@@ -391,7 +391,7 @@ export class TopologyView extends React.Component<any, any> {
                     <li>
                       <a href="#">
                         <i>
-                          <img src={images.DataServicesIcon} alt="" style={{ maxWidth: '56px' }} />
+                          <img src={images.DataServicesIcon} alt="" style={{ maxWidth: '40px' }} />
                         </i>
                         <span>SQL DB</span>
                       </a>
@@ -399,7 +399,7 @@ export class TopologyView extends React.Component<any, any> {
                     <li>
                       <a href="#">
                         <i>
-                          <img src={images.DataServicesIcon} alt="" style={{ maxWidth: '56px' }} />
+                          <img src={images.DataServicesIcon} alt="" style={{ maxWidth: '40px' }} />
                         </i>
                         <span>Mongo DB</span>
                       </a>
@@ -412,7 +412,7 @@ export class TopologyView extends React.Component<any, any> {
                     <li>
                       <a href="#">
                         <i>
-                          <img src={images.DataServicesIcon} alt="" style={{ maxWidth: '56px' }} />
+                          <img src={images.DataServicesIcon} alt="" style={{ maxWidth: '40px' }} />
                         </i>
                         <span>SQL DB</span>
                       </a>
@@ -420,7 +420,7 @@ export class TopologyView extends React.Component<any, any> {
                     <li>
                       <a href="#">
                         <i>
-                          <img src={images.DataServicesIcon} alt="" style={{ maxWidth: '56px' }} />
+                          <img src={images.DataServicesIcon} alt="" style={{ maxWidth: '40px' }} />
                         </i>
                         <span>Mongo DB</span>
                       </a>

@@ -7910,9 +7910,9 @@ a:focus, a:hover {
     border: 1px solid #000000; }
     .topology-view-container .topology-view-contains .topology-left-nav {
       display: inline-flex;
-      width: 118px;
-      padding-top: 75px;
-      padding-bottom: 75px;
+      width: 90px;
+      padding-top: 50px;
+      padding-bottom: 50px;
       padding-left: 8px;
       padding-right: 8px;
       background-color: #377AA0;
@@ -7927,13 +7927,13 @@ a:focus, a:hover {
         .topology-view-container .topology-view-contains .topology-left-nav ul li {
           display: block;
           width: 100%;
-          margin-bottom: 45px; }
+          margin-bottom: 10px; }
           .topology-view-container .topology-view-contains .topology-left-nav ul li:last-child {
             margin-bottom: 0; }
           .topology-view-container .topology-view-contains .topology-left-nav ul li a {
             display: flex;
-            width: 102px;
-            height: 102px;
+            width: 100%;
+            height: 74px;
             align-items: center;
             justify-content: center;
             background-color: #FFFFFF;
@@ -7948,8 +7948,8 @@ a:focus, a:hover {
               display: block;
               font-style: normal;
               font-weight: 400;
-              font-size: 15px;
-              line-height: 18px;
+              font-size: 11px;
+              line-height: 14px;
               color: #000000;
               margin-top: 0px;
               margin-bottom: 0px;
@@ -7957,7 +7957,7 @@ a:focus, a:hover {
               width: 100%; }
     .topology-view-container .topology-view-contains .topology-buttons {
       display: inline-flex;
-      width: 140px;
+      width: 110px;
       padding-top: 30px;
       padding-bottom: 30px;
       padding-left: 10px;
@@ -7971,7 +7971,7 @@ a:focus, a:hover {
         .topology-view-container .topology-view-contains .topology-buttons ul li {
           display: inline-flex;
           margin-right: 10px;
-          width: 55px;
+          width: 40px;
           min-height: 910px;
           background-color: #377AA0;
           position: relative; }
@@ -7979,16 +7979,16 @@ a:focus, a:hover {
             margin-right: 0; }
           .topology-view-container .topology-view-contains .topology-buttons ul li.waf span {
             top: 450px;
-            left: 6px; }
+            left: 4px; }
           .topology-view-container .topology-view-contains .topology-buttons ul li.api-gateway span {
             top: 455px;
-            left: -25px; }
+            left: -27px; }
           .topology-view-container .topology-view-contains .topology-buttons ul li span {
             display: block;
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 16px;
+            line-height: 20px;
             color: #FFFFFF;
             position: absolute;
             transform: rotate(-90deg);
@@ -7999,14 +7999,14 @@ a:focus, a:hover {
       padding: 30px 15px 20px;
       display: flex;
       flex-wrap: wrap;
-      width: calc(100% - 472px); }
+      width: calc(100% - 360px); }
       .topology-view-container .topology-view-contains .app-services .heading {
         display: block;
         width: 100%;
         text-align: center;
         color: #FFFFFF;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 20px;
         font-weight: 500;
         margin-bottom: 20px; }
       .topology-view-container .topology-view-contains .app-services .app-services-container {
@@ -8021,7 +8021,7 @@ a:focus, a:hover {
           border-radius: 5px;
           overflow: hidden;
           min-height: 894px;
-          width: 55px; }
+          width: 48px; }
           .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul {
             display: flex;
             height: 894px;
@@ -8038,27 +8038,27 @@ a:focus, a:hover {
                 white-space: nowrap;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 19px;
-                line-height: 23px;
+                font-size: 16px;
+                line-height: 20px;
                 color: #000000; }
               .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.orchestration {
                 height: 191px; }
                 .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.orchestration span {
-                  left: -30px;
-                  top: 85px; }
+                  left: -26px;
+                  top: 90px; }
               .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.business-service {
                 height: 385px; }
                 .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.business-service span {
-                  left: -46px;
-                  top: 180px; }
+                  left: -40px;
+                  top: 185px; }
               .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.common-service {
                 height: 318px; }
                 .topology-view-container .topology-view-contains .app-services .app-services-container .services-nav ul li.common-service span {
-                  left: -46px;
+                  left: -40px;
                   top: 150px; }
         .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains {
           display: flex;
-          width: calc(100% - 55px);
+          width: calc(100% - 48px);
           padding-left: 10px; }
           .topology-view-container .topology-view-contains .app-services .app-services-container .services-contains .contains {
             display: flex;
@@ -8079,7 +8079,7 @@ a:focus, a:hover {
               color: #000000;
               font-style: normal;
               font-weight: 500;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 52px;
               border: 0.5px solid #CCCCCC;
               box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
@@ -8111,7 +8111,7 @@ a:focus, a:hover {
                   border-radius: 5px;
                   font-style: normal;
                   font-weight: 500;
-                  font-size: 16px;
+                  font-size: 13px;
                   line-height: 20px;
                   width: 100%;
                   padding: 10px 20px; }
@@ -8128,7 +8128,7 @@ a:focus, a:hover {
               height: 303px; }
     .topology-view-container .topology-view-contains .data-services-right {
       float: right;
-      width: 204px;
+      width: 150px;
       padding: 15px;
       background-color: #377AA0;
       min-height: 986px;
@@ -8139,8 +8139,8 @@ a:focus, a:hover {
         color: #FFFFFF;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 16px;
+        line-height: 20px;
         text-align: center;
         margin-bottom: 10px; }
       .topology-view-container .topology-view-contains .data-services-right .data-services-buttons {
@@ -8163,7 +8163,7 @@ a:focus, a:hover {
           border-radius: 10px 10px 0px 0px;
           font-style: normal;
           font-weight: 500;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 52px; }
         .topology-view-container .topology-view-contains .data-services-right .data-services-buttons ul {
           display: flex;
@@ -8188,7 +8188,7 @@ a:focus, a:hover {
               width: 100%;
               font-style: normal;
               font-weight: 500;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 20px;
               justify-content: center;
               margin-top: 5px; }

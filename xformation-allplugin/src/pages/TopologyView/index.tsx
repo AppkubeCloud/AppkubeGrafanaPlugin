@@ -59,7 +59,7 @@ export class TopologyView extends React.Component<any, any> {
                   <li>
                     <a href="#" className="">
                       <i className="icon">
-                        <img src={images.MobileApps} alt="" style={{ maxWidth: '37px' }} />
+                        <img src={images.MobileApps} alt="" style={{ maxWidth: '24px' }} />
                       </i>
                       <span>Mobile apps</span>
                     </a>
@@ -67,7 +67,7 @@ export class TopologyView extends React.Component<any, any> {
                   <li>
                     <a href="#" className="">
                       <i className="icon">
-                        <img src={images.Applications} alt="" style={{ maxWidth: '37px' }} />
+                        <img src={images.Applications} alt="" style={{ maxWidth: '24px' }} />
                       </i>
                       <span>Applications</span>
                     </a>
@@ -75,7 +75,7 @@ export class TopologyView extends React.Component<any, any> {
                   <li>
                     <a href="#" className="">
                       <i className="icon">
-                        <img src={images.Dashboard} alt="" style={{ maxWidth: '37px' }} />
+                        <img src={images.Dashboard} alt="" style={{ maxWidth: '24px' }} />
                       </i>
                       <span>Dashboard</span>
                     </a>
@@ -83,7 +83,7 @@ export class TopologyView extends React.Component<any, any> {
                   <li>
                     <a href="#" className="">
                       <i className="icon">
-                        <img src={images.Reports} alt="" style={{ maxWidth: '37px' }} />
+                        <img src={images.Reports} alt="" style={{ maxWidth: '24px' }} />
                       </i>
                       <span>Reports</span>
                     </a>
@@ -91,7 +91,7 @@ export class TopologyView extends React.Component<any, any> {
                   <li>
                     <a href="#" className="">
                       <i className="icon">
-                        <img src={images.Query} alt="" style={{ maxWidth: '37px' }} />
+                        <img src={images.Query} alt="" style={{ maxWidth: '24px' }} />
                       </i>
                       <span>Query</span>
                     </a>
@@ -99,7 +99,7 @@ export class TopologyView extends React.Component<any, any> {
                   <li>
                     <a href="#" className="">
                       <i className="icon">
-                        <img src={images.Api} alt="" style={{ maxWidth: '37px' }} />
+                        <img src={images.Api} alt="" style={{ maxWidth: '24px' }} />
                       </i>
                       <span>API</span>
                     </a>

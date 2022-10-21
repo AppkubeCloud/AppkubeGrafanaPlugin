@@ -1,46 +1,6 @@
 .topology-view-container {
     background-color: #ffffff;
 
-    .topology-heading {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        color: #000000;
-    }
-
-    .search-box {
-        display: block;
-        width: 100%;
-        background: #FFFFFF;
-        border: 1px solid #C5C4C4;
-        border-radius: 5px;
-        position: relative;
-
-        .input-group-text {
-            background-color: #FFFFFF;
-            border: none;
-            width: 100%;
-            padding-left: 40px;
-            padding-right: 15px;
-            text-align: left;
-
-            &:focus {
-                outline: none;
-            }
-        }
-
-        i {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 32px;
-            height: 32px;
-            line-height: 30px;
-            text-align: center;
-        }
-    }
-
     .topology-view-contains {
         display: flex;
         width: 100%;
@@ -287,9 +247,8 @@
                         }
 
                         ul {
-                            display: flex;
+                            display: block;
                             width: 100%;
-                            flex-wrap: wrap;
                             background: #FFFFFF;
                             box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
                             border-radius: 10px;
@@ -537,6 +496,14 @@
                                 &.red {
                                     background: #DC3F1F;
                                 }
+
+                                &.orange {
+                                    background: #FF9429;
+                                }
+
+                                &.yellow {
+                                    background: #FFF700;
+                                }
                             }
                         }
                     }
@@ -611,5 +578,45 @@
                 }
             }
         }
+    }
+}
+
+.topology-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.search-box {
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C5C4C4;
+    border-radius: 5px;
+    position: relative;
+
+    .input-group-text {
+        background-color: #FFFFFF;
+        border: none;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 15px;
+        text-align: left;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        line-height: 30px;
+        text-align: center;
     }
 }
